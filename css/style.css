@@ -393,3 +393,22 @@
     font-size: 20px !important;
   }
 }
+/* Custom CSS for fade-in-up effect */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* Apply the fade-in-up effect to desired elements */
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+.hidden {
+opacity: 0;
+visibility: hidden;
+}
